@@ -1,14 +1,15 @@
+/*
 * Surge：
 [MITM]
 hostname = spclient.wg.spotify.com
 [Script]
-spotify-proto = type=http-response,pattern=^https\:\/\/spclient\.wg\.spotify\.com\/(bootstrap\/v1\/bootstrap|user-customization-service\/v1\/customize)$,requires-body=1,binary-body-mode=1,max-size=0,script-path=https://raw.githubusercontent.com/fangshuor/script/master/Spotify,script-update-interval=0
+spotify-proto = type=http-response,pattern=^https\:\/\/spclient\.wg\.spotify\.com\/(bootstrap\/v1\/bootstrap|user-customization-service\/v1\/customize)$,requires-body=1,binary-body-mode=1,max-size=0,script-path=https://raw.githubusercontent.com/fangshuor/script/main/spotify.js,script-update-interval=0
 
 * Loon：
 [Mitm]
 hostname =spclient.wg.spotify.com
 [Script]
-http-response ^https\:\/\/spclient\.wg\.spotify\.com\/(bootstrap\/v1\/bootstrap|user-customization-service\/v1\/customize)$ script-path=https://raw.githubusercontent.com/fangshuor/script/master/Spotify, requires-body=true, binary-body-mode=true, timeout=10, tag=spotifyProto
+http-response ^https\:\/\/spclient\.wg\.spotify\.com\/(bootstrap\/v1\/bootstrap|user-customization-service\/v1\/customize)$ script-path=https://raw.githubusercontent.com/fangshuor/script/main/spotify.js, requires-body=true, binary-body-mode=true, timeout=10, tag=spotifyProto
 */	
  
  
