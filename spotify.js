@@ -1,4 +1,3 @@
-/*
 * Surge：
 [MITM]
 hostname = spclient.wg.spotify.com
